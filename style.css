@@ -198,13 +198,6 @@ p {
 }
 /* End Header section */
 
-
-
-
-
-
-
-
 .custom-button {
 	/* Add your custom button styles here */
 	display: inline-block;
@@ -214,25 +207,22 @@ p {
 	border: 2px solid #007bff;
 	border-radius: 5px;
 	text-decoration: none;
-	transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-  }
-  
-  .custom-button:hover {
+	transition:
+		background-color 0.3s ease-in-out,
+		color 0.3s ease-in-out;
+}
+
+.custom-button:hover {
 	background-color: transparent;
 	color: #007bff;
-  }
-  
-  /* Adjust button styles for different screen sizes */
-  @media (max-width: 768px) {
-	.custom-button {
-	  /* Adjust styles for smaller screens */
-	}
-  }
-  
+}
+
+/* Adjust button styles for different screen sizes */
+
 
 /* Hero Section */
 #hero {
-	background-image: url(./img/243946702_4819988171428479_1397058092857598546_n.jpg);
+	background-image: url(./img/maoor.jpg);
 	background-size: cover;
 	background-position: center top; /* Adjusted for small screens */
 	position: relative;
@@ -245,10 +235,9 @@ p {
 	#hero {
 		background-position: center center; /* Adjust the background position for smaller screens */
 		background-size: contain; /* Change background size to contain */
-		background-repeat:no-repeat ;
+		background-repeat: no-repeat;
 	}
 }
-
 
 #hero::after {
 	content: "";
