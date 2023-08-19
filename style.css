@@ -1,4 +1,4 @@
-@import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
+@import "https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap";
 * {
 	padding: 0;
 	margin: 0;
@@ -6,7 +6,7 @@
 }
 html {
 	font-size: 10px;
-	font-family: 'Montserrat', sans-serif;
+	font-family: "Montserrat", sans-serif;
 	scroll-behavior: smooth;
 }
 a {
@@ -159,7 +159,7 @@ p {
 }
 #header .hamburger:after {
 	position: absolute;
-	content: '';
+	content: "";
 	height: 100%;
 	width: 100%;
 	border-radius: 50%;
@@ -175,7 +175,7 @@ p {
 }
 #header .hamburger .bar::after,
 #header .hamburger .bar::before {
-	content: '';
+	content: "";
 	position: absolute;
 	height: 100%;
 	width: 100%;
@@ -202,12 +202,24 @@ p {
 #hero {
 	background-image: url(./img/243946702_4819988171428479_1397058092857598546_n.jpg);
 	background-size: cover;
-	background-position: top center;
+	background-position: center top; /* Adjusted for small screens */
 	position: relative;
 	z-index: 1;
+	min-height: 100vh; /* Ensure the hero section covers the viewport height */
 }
+
+/* Media Query for Background Image on Smaller Screens */
+@media (max-width: 768px) {
+	#hero {
+		background-position: center center; /* Adjust the background position for smaller screens */
+		background-size: contain; /* Change background size to contain */
+		background-repeat:no-repeat ;
+	}
+}
+
+
 #hero::after {
-	content: '';
+	content: "";
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -248,7 +260,7 @@ p {
 	left: 0;
 	height: 100%;
 	width: 0;
-	background-color:rgb(81, 138, 191);
+	background-color: rgb(81, 138, 191);
 	animation: text_reveal_box 1s ease;
 	animation-delay: 0.5s;
 }
@@ -299,7 +311,7 @@ p {
 	overflow: hidden;
 }
 #services .service-item::after {
-	content: '';
+	content: "";
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -382,7 +394,7 @@ p {
 	position: relative;
 }
 #projects .project-img:after {
-	content: '';
+	content: "";
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -436,7 +448,7 @@ p {
 	border: 10px solid white;
 }
 #about .col-left .about-img::after {
-	content: '';
+	content: "";
 	position: absolute;
 	left: -33px;
 	top: 19px;
